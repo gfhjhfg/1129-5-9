@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2</title>
+    <style>
+        a {
+            display: block;
+            width: 80%;
+            height: 300px;
+            margin: 10px auto;
+            background-color: skyblue;
+            color: black;
+            text-decoration: none;
+            text-align: center;
+            font-size: 100px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 2、求数组[2,6,1,77,52,25,7]中的最大值 要求：两种方法 -->
+    <a href="./index.html">点击此区域回主页面</a>
+    <script>
+        var arr=[2,6,1,7,4,3,5];
+        // var arr=[2,6,1,77,52,25,7];
+        var max=arr[0];
+        function arrMax(arr){
+            for(var i=1;i<arr.length;i++){
+                // if(arr[i]>max){
+                //     max=arr[i];
+                // }
+                max=Math.max(max,arr[i]);
+            }
+            return max;
+        }
+        max=arrMax(arr);
+        alert("["+arr+"]"+" 该数组的最大值为"+max);
+    </script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1</title>
+    <style>
+        a {
+            display: block;
+            width: 80%;
+            height: 300px;
+            margin: 10px auto;
+            background-color: skyblue;
+            color: black;
+            text-decoration: none;
+            text-align: center;
+            font-size: 100px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 1、求数组 [2,6,1,7,4] 里面所有元素的和以及平均值。 -->
+    <a href="./index.html">点击此区域回主页面</a>
+    <script>
+        var sum=0;
+        var arr=[2,6,1,7,4,3,5];
+        function arrSum(arr){
+            for(var i=0;i<arr.length;i++){
+                sum+=arr[i];
+            }
+            return sum;
+        }
+        sum=arrSum(arr);
+        alert("["+arr+"]"+" 该数组的元素和为"+sum+",平均值为"+sum/arr.length);
+    </script>
+</body>
+</html>

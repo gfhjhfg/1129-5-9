@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2</title>
+    <style>
+        a {
+            display: block;
+            width: 80%;
+            height: 300px;
+            margin: 10px auto;
+            background-color: skyblue;
+            color: black;
+            text-decoration: none;
+            text-align: center;
+            font-size: 100px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 2、2个数的最大值
+    写一个函数getMax(num1, num2)，能返回传入的任意两个数字的最大值。 -->
+    <a href="./index.html">点击此区域回主页面</a>
+    <script>
+        function getMax(a,b){
+            if(a>b){
+                alert(a+"是两个数里最大的");
+            }else {
+                alert(b+"是两个数里最大的");
+            }
+        }
+        var a=Number(prompt("请输入一个数"));
+        var b=Number(prompt("再输入一个数"));
+        getMax(a,b);
+    </script>
+</body>
+</html>

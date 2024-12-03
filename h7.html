@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7</title>
+    <style>
+        a {
+            display: block;
+            width: 80%;
+            height: 300px;
+            margin: 10px auto;
+            background-color: skyblue;
+            color: black;
+            text-decoration: none;
+            text-align: center;
+            font-size: 100px
+        }
+    </style>
+</head>
+<body>
+    <!-- 7、将数组 ['red', 'green', 'blue', 'yellow',
+      'purple'] 的内容反过来存放要求：两种方法 -->
+    <a href="./index.html">点击此区域回主页面</a>
+    <script>
+        function flip(arr){
+            return arr.reverse();
+        }
+        var arr=['red', 'green', 'blue', 'yellow',
+        'purple'];
+        var a=flip(arr);
+        console.log(a);
+    </script>
+    <script>
+        function flip(arr){
+            var arr1=[];
+            for(var i=arr.length-1;i>=0;i--){
+                arr1.push(arr[i]);
+            }
+            return arr1;
+        }
+        var arr=['red', 'green', 'blue', 'yellow',
+        'purple'];
+        var a=flip(arr);
+        console.log(a);
+    </script>
+</body>
+</html>

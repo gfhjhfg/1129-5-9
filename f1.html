@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1</title>
+    <style>
+        a {
+            display: block;
+            width: 80%;
+            height: 300px;
+            margin: 10px auto;
+            background-color: skyblue;
+            color: black;
+            text-decoration: none;
+            text-align: center;
+            font-size: 100px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 1、买面包
+    一个面包5元钱，客户可以买整数个面包，封装一个函数，
+    客户输入钱数和个数，点击找钱按钮，弹出应找多少钱 -->
+    <a href="./index.html">点击此区域回主页面</a>
+    <script>
+        function buy(a,b){
+            if(a-b*5<0){
+                alert("你的"+a+"元钱，不够买"+b+"个面包,请重新输入");
+            }else {
+                var s=a-b*5;
+                alert("你的"+a+"元钱，买"+b+"个面包,还要找你"+s+"元");
+            }
+        }
+        var a=Number(prompt("请输入您的钱"));
+        var b=Number(prompt("请输入您要买面包的个数"));
+        buy(a,b);
+    </script>
+</body>
+</html>

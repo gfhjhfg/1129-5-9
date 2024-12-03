@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>6</title>
+    <style>
+        a {
+            display: block;
+            width: 80%;
+            height: 300px;
+            margin: 10px auto;
+            background-color: skyblue;
+            color: black;
+            text-decoration: none;
+            text-align: center;
+            font-size: 100px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 5、将数组 [2, 0, 6, 1, 77, 0, 52, 0, 25, 7] 中
+     大于等于 10 的元素选出来，放入新数组。 -->
+    <a href="./index.html">点击此区域回主页面</a>
+    <script>
+        var arr=[];
+        var arr1=[2,6,1,77,52,25,7,11,6,34,5,0];
+        // var arr1=[2, 0, 6, 1, 77, 0, 52, 0, 25, 7];
+        function intArr(arr1){
+            for(var i=0;i<arr1.length;i++){
+                if(arr1[i]>=10){
+                    arr.push(arr1[i])
+                }
+            }
+            return arr;
+        }
+        arr=intArr(arr1);
+        // var arrStr = "[" + arr.join(", ") + "]"; 
+        // console.log(arrStr);
+        alert("["+arr1+"]"+" 该数组中数字大于10的为"+arr);
+    </script>
+</body>
+</html>

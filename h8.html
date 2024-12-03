@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>8</title>
+    <style>
+        a {
+            display: block;
+            width: 80%;
+            height: 300px;
+            margin: 10px auto;
+            background-color: skyblue;
+            color: black;
+            text-decoration: none;
+            text-align: center;
+            font-size: 100px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 8、判断数组中是否所有的数字都大于0,就在控制台
+    打印出“数组中所有数字都大于0”不是就在控制台打印“NO” -->
+    <a href="./index.html">点击此区域回主页面</a>
+    <script>
+        function all(arr1){
+            for(var i=0;i<arr1.length;i++){
+                if(arr1[i]<=0){
+                    return 1;
+                }
+            }
+            return 0;
+        }
+        var arr1=[2,6,1,77,52,25,7,11,6,34,5];
+        // var arr1=[2, 0, 6, 1, 77, 0, 52, 0, 25, 7];
+        var a=all(arr1);
+        if(a==1){
+            console.log("NO");
+        }else{
+            console.log("数组中所有数字都大于0");
+        }
+    </script>
+</body>
+</html>

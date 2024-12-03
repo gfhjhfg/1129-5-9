@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>8</title>
+    <style>
+        a {
+            display: block;
+            width: 80%;
+            height: 300px;
+            margin: 10px auto;
+            background-color: skyblue;
+            color: black;
+            text-decoration: none;
+            text-align: center;
+            font-size: 100px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 3、将数组["a",23,"b",45,32,NaN,-50,true,""," ",9]中数字元素求和 -->
+    <a href="./index.html">点击此区域回主页面</a>
+    <script>
+        var arr=["a",23,"b",45,32,NaN,-50,true,""," ",9];
+        // var arr=[2,6,1,77,52,25,7];
+        var sum=0;
+        function arrSum(arr){
+            for(var i=0;i<arr.length;i++){
+                if(typeof arr[i]==="number" && !isNaN(arr[i]))
+                sum+=arr[i];
+            }
+            return sum;
+        }
+        sum=arrSum(arr);
+        alert("["+arr+"]"+" 该数组中数字的和为"+sum);
+    </script>
+</body>
+</html>

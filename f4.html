@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4</title>
+    <style>
+        a {
+            display: block;
+            width: 80%;
+            height: 300px;
+            margin: 10px auto;
+            background-color: skyblue;
+            color: black;
+            text-decoration: none;
+            text-align: center;
+            font-size: 100px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 4、累加和
+    写一个函数getSum(start,end)，传入两个整数start和end，
+    计算从start到end的累加值，并返回和。 -->
+    <a href="./index.html">点击此区域回主页面</a>
+    <script>
+        function getSum(a,b){
+            var sum=0;
+            if(a<b){
+                for(var i=a;i<=b;i++){
+                    sum+=i;
+                }
+                alert(a+"到"+b+"的累加值为"+sum);
+            }else {
+                alert("请重新输入，要第一个数小于第二个")
+            }
+        }
+        var a=Number(prompt("请输入一个数"));
+        var b=Number(prompt("再输入一个数"));
+        getSum(a,b);
+    </script>
+</body>
+</html>
